@@ -5,6 +5,7 @@ import React from "react";
 import { Navbar } from "./navbar";
 
 import style from "./style.module.scss";
+import { Footer } from "./footer";
 
 // Component
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -12,7 +13,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     <>
       <Navbar />
       <main className={style.container}>{children}</main>
-      <footer>{/* Your footer content */}</footer>
+      <Footer />
     </>
   );
 };
