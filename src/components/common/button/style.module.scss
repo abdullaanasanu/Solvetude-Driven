@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 0.75rem;
+  background: var(--btn-color);
+  color: var(--white);
+  border: none;
+  border-radius: 0.25rem;
+  font-size: var(--font-size-small);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: transparent
+      linear-gradient(113deg, #13d8ff 0%, #118de4 38%, var(--btn-color) 100%) 0%
+      0% no-repeat padding-box;
+  }
+}
