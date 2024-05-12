@@ -40,24 +40,8 @@
           transition: all 0.3s;
 
           &:hover {
-            color: var(--primary);
+            opacity: 0.8;
           }
-        }
-      }
-
-      .settings {
-        display: flex;
-        align-items: center;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: all 0.3s;
-
-        img {
-          width: 2.5rem;
-        }
-
-        &:hover {
-          background-color: var(--hover);
         }
       }
     }

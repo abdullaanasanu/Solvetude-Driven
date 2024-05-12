@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Wrapper } from "@/components/common/wrapper";
 import style from "./style.module.scss";
 import { Button } from "@/components/common/button";
+import { Dropdown } from "./dropdown";
+import { Settings } from "./settings";
 
 // Component
 export const Navbar = () => {
@@ -18,16 +20,14 @@ export const Navbar = () => {
         </Link>
         <div className={style.right}>
           <div className={style.links}>
-            <Link href={"/"}>Your Property</Link>
+            <Dropdown title="Your Property" link={"/"} />
             <Link href={"/"}>For Developers</Link>
             <Link href={"/"}>Invest</Link>
             <Link href={"/"}>Services</Link>
             <Link href={"/"}>Content Hub</Link>
             <Link href={"/"}>About Us</Link>
           </div>
-          <div className={style.settings}>
-            <img src="/icons/setting.svg" alt="Settings" />
-          </div>
+          <Settings />
           <Button title="Instant Valuation" />
         </div>
       </Wrapper>
