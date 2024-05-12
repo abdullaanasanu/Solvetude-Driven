@@ -10,11 +10,11 @@
     font-size: var(--font-size-small);
     color: var(--text-color);
     transition: all 0.3s;
+    cursor: pointer;
 
     img {
       height: 0.8rem;
       width: 0.8rem;
-      cursor: pointer;
     }
   }
 
